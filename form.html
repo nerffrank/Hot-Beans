@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Apply for junior web developer and sustainable web trainee roles at Hot Beans Web.">
+  <title>Apply Now | Hot Beans Web</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Hot Beans Web home">HOT <span>BEANS</span></a>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation">
+      <label class="menu-button" for="nav-toggle" aria-label="Open navigation"><span class="menu-icon"></span></label>
+      <ul class="nav-links">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trainee.html">Trainee Profiles</a></li>
+        <li><a href="roles.html">Roles &amp; Requirements</a></li>
+        <li><a href="training.html">Training &amp; Courses</a></li>
+        <li><a class="button apply" href="form.html">Apply Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <a class="back-link" href="index.html">Back to homepage</a>
+        <p class="eyebrow">Online Application</p>
+        <h1>Apply to join Hot Beans Web.</h1>
+        <p class="lead">Tell us about your training, portfolio and interest in sustainable web development. This prototype uses native browser controls, with one tiny script for the confirmation message.</p>
+      </div>
+    </section>
+
+    <section class="light">
+      <div class="wrap form-grid">
+        <div>
+          <h2>Application details</h2>
+          <p class="lead">Use this form to apply for a junior web role or sustainable web trainee position. A real version would send the form to a secure server-side system.</p>
+          <ul class="sustainability-list">
+            <li>The form layout works with native browser controls.</li>
+            <li>Required fields use built-in browser validation.</li>
+            <li>A tiny script updates the button after submission.</li>
+          </ul>
+        </div>
+        <form class="form-panel" action="#" method="post" data-application-form>
+          <label>
+            Full name
+            <input name="name" autocomplete="name" required>
+          </label>
+          <label>
+            Email address
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label>
+            Role of interest
+            <select name="role" required>
+              <option value="">Choose a role</option>
+              <option>Junior Web Developer</option>
+              <option>Sustainable Web Trainee</option>
+              <option>Work Experience Placement</option>
+            </select>
+          </label>
+          <label>
+            Portfolio link
+            <input type="url" name="portfolio" placeholder="Portfolio URL">
+          </label>
+          <label>
+            Why are you interested in sustainable web development?
+            <textarea name="message" required></textarea>
+          </label>
+          <button class="button" type="submit" data-submit-button>Submit Application</button>
+          <p class="note" data-form-message>Prototype form: no personal data is sent anywhere from this static page.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>&copy; 2026 Hot Beans Web. Privacy Policy | Contact | Sustainable Recruitment</p>
+    </div>
+  </footer>
+</body>
+</html>
