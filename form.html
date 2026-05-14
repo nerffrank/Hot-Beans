@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Apply for junior web developer and sustainable web trainee roles at Hot Beans Web.">
+  <meta name="theme-color" content="#07140f">
   <title>Apply Now | Hot Beans Web</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
@@ -57,7 +58,7 @@
           </label>
           <label>
             Role of interest
-            <select name="role" required>
+            <select name="role" autocomplete="organization-title" required>
               <option value="">Choose a role</option>
               <option>Junior Web Developer</option>
               <option>Sustainable Web Trainee</option>
@@ -66,11 +67,11 @@
           </label>
           <label>
             Portfolio link
-            <input type="url" name="portfolio" placeholder="Portfolio URL">
+            <input type="url" name="portfolio" placeholder="Portfolio URL" autocomplete="url">
           </label>
           <label>
             Why are you interested in sustainable web development?
-            <textarea name="message" required></textarea>
+            <textarea name="message" autocomplete="off" required></textarea>
           </label>
           <button class="button" type="submit" data-submit-button>Submit Application</button>
           <p class="note" data-form-message>Prototype form: no personal data is sent anywhere from this static page.</p>
